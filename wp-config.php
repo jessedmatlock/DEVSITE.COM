@@ -22,19 +22,20 @@ define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settin
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//define('DB_NAME', 'devsite');
-define('DB_NAME', 'devsite');
+	define('DB_NAME', 'devsite');
+    /** MySQL database username */
+	define('DB_USER', 'root');
+    /** MySQL database password */
+	define('DB_PASSWORD', 'root');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    //define('WP_HOME','http://localdomain.com');
+    //define('WP_SITEURL','http://localdomain.com');
 
-/** MySQL database username */
-//define('DB_USER', 'root');
-define('DB_USER', 'root');
-
-/** MySQL database password */
-//define('DB_PASSWORD', 'root');
-define('DB_PASSWORD', 'root');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -43,8 +44,6 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 define('DISALLOW_FILE_EDIT', TRUE); // Sucuri Security: Fri, 07 Aug 2015 03:26:26 +0000
-
-
 
 
 /**#@+
@@ -82,6 +81,8 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
+define('EMPTY_TRASH_DAYS', 7 ); //Integer is the amount of days
+
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
