@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Sep 05, 2016 at 11:34 AM
+-- Generation Time: Sep 05, 2016 at 11:39 AM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.8
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `devsite`
 --
-CREATE DATABASE IF NOT EXISTS `devsite` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `devsite`;
 
 -- --------------------------------------------------------
 
