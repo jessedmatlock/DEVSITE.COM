@@ -119,7 +119,7 @@ function remove_admin_menu_links(){
 		unset($submenu['themes.php'][6]); // remove customize link
 	
 	$user = wp_get_current_user();
-	if( $user && $user->ID !== 2) { // if the user ID it not first admin's
+	if( $user && $user->ID !== 1 && $user->ID !== 2 && $user->ID !== 3 ) { // if the user ID it not first admin's
 		//remove_menu_page('edit.php'); // Posts
 		//remove_menu_page('upload.php'); // Media
 		//remove_menu_page('link-manager.php'); // Links
