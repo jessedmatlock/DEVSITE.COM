@@ -13,6 +13,8 @@
 				<?php reverie_entry_meta(); ?>
 			</header>
 			<div class="entry-content">
+				<figure><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></figure>
+
 				<?php the_content(); ?>
 			</div>
 			<footer>
